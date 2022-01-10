@@ -28,10 +28,6 @@ try:
     new_window = browser.window_handles[1]
     browser.switch_to.window(new_window)
 
-    #confirm
-#    confirm = browser.switch_to.alert
-#    confirm.accept()
-
     #input_value
     input_value = browser.find_element(By.ID, 'input_value')
     x = input_value.text
@@ -39,25 +35,6 @@ try:
 
     # submit
     submit = browser.find_element(By.CSS_SELECTOR, "button.btn").click()
-
-
-    #intut
-#    firstname = browser.find_element(By.CSS_SELECTOR, "input[name=firstname]").send_keys('1')
-#    lastname = browser.find_element(By.CSS_SELECTOR, "input[name=lastname]").send_keys('1')
-#    email = browser.find_element(By.CSS_SELECTOR, "input[name=email]").send_keys('1')
-
-    # file
-#    current_dir = os.path.abspath(os.path.dirname(__file__))
-#    file = browser.find_element(By.CSS_SELECTOR, "input[name=file]").send_keys(path)
-
-    #robotCheckbox
-#    robotCheckbox = browser.find_element(By.ID, "robotCheckbox")
-#    browser.execute_script("return arguments[0].scrollIntoView(true);", robotCheckbox)
-#    robotCheckbox.click()
-
-    #robotsRule
-#    robotsRule = browser.find_element(By.ID, "robotsRule").click()
-
 
 
 finally:
